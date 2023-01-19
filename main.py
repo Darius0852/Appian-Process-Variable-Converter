@@ -31,12 +31,15 @@ print("Lets Convert it!")
 
 
 
-var.replace("[", "{")
-var.replace("]", "}")
-var.replace("=", ":")
-var.replace("=,", ":null,")
-var.replace("=]", ":null]")
+var = var.replace("[", "{")
+var = var.replace("]", "}")
+var = var.replace("=", ":")
+var = var.replace("=,", ":null,")
+var = var.replace("=]", ":null]")
 
+print("NEW VAR\n")
+
+print(var)
 
 
 
