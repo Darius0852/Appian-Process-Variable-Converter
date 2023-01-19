@@ -14,12 +14,33 @@ print("Lets Convert it!")
 # df = pd.json_normalize(var)
 # print(df)
 
-splitVar = var.split(']')
 
-for x in splitVar:
-    print("EQUALS " + x)
+
+# SPLIT EVERYTHING
+# ******************************************
+
+
+# splitVar = var.split(']')
+
+# for x in splitVar:
+#     print("EQUALS " + x)
 
 # print("SplitVar is " + splitVar)
+
+# ******************************************
+
+
+
+var.replace("[", "{")
+var.replace("]", "}")
+var.replace("=", ":")
+var.replace("=,", ":null,")
+var.replace("=]", ":null]")
+
+
+
+
+
 
 
 # Example Data: [[id:3, name:"John"]]
