@@ -37,7 +37,7 @@ var = var.replace("=", ":")
 var = var.replace("=,", ":null,")
 var = var.replace("=]", ":null]")
 
-print("NEW VAR\n")
+print("You're converted process variable: \n")
 
 print(var)
 
