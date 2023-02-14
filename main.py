@@ -36,6 +36,8 @@ var = var.replace("]", "}")
 var = var.replace("=", ":")
 var = var.replace("=,", ":null,")
 var = var.replace("=]", ":null]")
+var = var.replace(":,", ":null,")
+var = var.replace(":]", ":}")
 
 print("You're converted process variable: \n")
 
