@@ -3,6 +3,7 @@ import ast
 import re
 from convertOctal import *
 from convertNestedArray import *
+from convertArrayToDictionary import *
 
 with open('Example Input - ProcessVariable.txt', 'r') as file:
     inputVar = file.read().replace('\n', '')
@@ -11,9 +12,9 @@ print("Lets Convert it!")
 
 octalConvertedInputVar = convert_octals_to_decimals(inputVar)
 
-convertedNestedArray = convert_nested_array(octalConvertedInputVar)
+# convertedNestedArray = convert_nested_array(octalConvertedInputVar)
 
-
+convertedDictionary = convert_string_to_list_of_dicts(octalConvertedInputVar)
 
 # SPLIT EVERYTHING
 # ******************************************
@@ -30,15 +31,15 @@ convertedNestedArray = convert_nested_array(octalConvertedInputVar)
 
 
 
-var = var.replace("[", "{")
-var = var.replace("]", "}")
-var = var.replace("=", ":")
-var = var.replace("=,", ":null,")
-var = var.replace("=]", ":null]")
+# var = var.replace("[", "{")
+# var = var.replace("]", "}")
+# var = var.replace("=", ":")
+# var = var.replace("=,", ":null,")
+# var = var.replace("=]", ":null]")
 
-print("You're converted process variable: \n")
+# print("You're converted process variable: \n")
 
-print(var)
+# print(var)
 
 
 
